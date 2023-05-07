@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Search Products</title>
+</head>
+<body>
+  <h1>Search Products</h1>
+  <form action="/search" method="get">
+    <label for="name">Name:</label>
+    <input type="text" name="name" id="name">
+    <br>
+    <label for="price">Price:</label>
+    <input type="number" name="price" id="price">
+    <br>
+    <button type="submit">Search</button>
+  </form>
+
+  <nav class="desktop-navigation-menu">
+
+    <div class="container">
+
+      <ul class="desktop-menu-category-list">
+
+        <li class="menu-category">
+          <a href="#" class="menu-title">Home</a>
+        </li>
+
+        <li class="menu-category">
+          <a href="#" class="menu-title">Industrial Products</a>
+
+          <div class="dropdown-panel">
+
+            <ul class="dropdown-panel-list">
+
+              <li class="menu-title">
+                <a href="#">Electronics</a>
+              </li>
+
+              <li class="panel-list-item">
+                <a href="#">Resistors</a>
+              </li>
+
+              <li class="panel-list-item">
+                <a href="#">Micro Chips</a>
+              </li>
+
+              <li class="panel-list-item">
+                <a href="#">PCB boards</a>
+              </li>
+
+              <li class="panel-list-item">
+                <a href="#">Safety</a>
+              </li>
+
+              <li class="panel-list-item">
+                <a href="#">Microprocessor</a>
+              </li>
+
+              <li class="panel-list-item">
+                <a href="#">
+                  <img src="./assets/images/electronics-banner-01.jpg" alt="electonics" width="250"
+                    height="119">
+                </a>
+              </li>
+
+            </ul>
+
+            <ul class="dropdown-panel-list">
+
+              <li class="menu-title">
+                <a href="#">DC Motor</a>
+              </li>
+
+              <li class="panel-list-item">
+                <a href="#">5 Volts</a>
+              </li>
+
+              <li class="panel-list-item">
+                <a href="#">12 Volts</a>
+              </li>
+
+              <li class="panel-list-item">
+                <a href="#">50 Volts</a>
+              </li>
+
+              <li class="panel-list-item">
+                <a href="#">100 Volts</a>
+              </li>
+
+              <li class="panel-list-item">
+                <a href="#">120 Volts Plus</a>
+              </li>
+
+              <li class="panel-list-item">
+                <a href="#">
+                  <img src="./assets/images/dcmtr-01.jpg" alt="dc motor" width="250" height="119">
+                </a>
+              </li>
+
+            </ul>
+
+            <ul class="dropdown-panel-list">
+
+              <li class="menu-title">
+                <a href="#">AC Motor</a>
+              </li>
+
+              <li class="panel-list-item">
+                <a href="#">5 Volts</a>
+              </li>
+
+              <li class="panel-list-item">
+                <a href="#">12 Volts</a>
+              </li>
+
+              <li class="panel-list-item">
+                <a href="#">50 Volts</a>
+              </li>
+
+              <li class="panel-list-item">
+                <a href="#">100 Volts</a>
+              </li>
+
+              <li class="panel-list-item">
+                <a href="#">120 Volts Plus</a>
+              </li>
+
+              <li class="panel-list-item">
+                <a href="#">
+                  <img src="./assets/images/acmtr-02.jpg" alt="acs motor" width="250" height="119">
+                </a>
+              </li>
+
+            </ul>
+
+            <ul class="dropdown-panel-list">
+
+              <li class="menu-title">
+                <a href="#">Electronics Cables</a>
+              </li>
+
+              <li class="panel-list-item">
+                <a href="#">3 ft</a>
+              </li>
+
+              <li class="panel-list-item">
+                <a href="#">5 ft</a>
+              </li>
+
+              <li class="panel-list-item">
+                <a href="#">10 ft</a>
+              </li>
+
+              <li class="panel-list-item">
+                <a href="#">15 ft</a>
+              </li>
+
+              <li class="panel-list-item">
+                <a href="#">20 ft plus</a>
+              </li>
+
+              <li class="panel-list-item">
+                <a href="#">
+                  <img src="./assets/images/electronic-cables-02.jpg" alt="cables" width="250" height="119">
+                </a>
+              </li>
+
+            </ul>
+
+          </div>
+        </li>
+
+<!--Safety-->
+
+        <li class="menu-category">
+          <a href="#" class="menu-title">Safety</a>
+
+          <ul class="dropdown-list">
+
+            <li class="dropdown-item">
+              <a href="#">FR rated</a>
+            </li>
+
+            <li class="dropdown-item">
+              <a href="#">Tough Shorts & Jeans</a>
+            </li>
+
+            <li class="dropdown-item">
+              <a href="#">Googles & Glasses</a>
+            </li>
+
+            <li class="dropdown-item">
+              <a href="#">Gloves</a>
+            </li>
+
+            <li class="dropdown-item">
+              <a href="#">Hard Hats</a>
+            </li>
+          </ul>
+        </li>
+
+        
+        <li class="menu-category">
+          <a href="QuestionsAndAnswers.html" class="menu-title">Questions and Answers</a>
+        </li>
+
+        <li class="menu-category">
+          <a href="AdvanceSearchProducts.html" class="menu-title">Special Products</a>
+        </li>
+
+        <li class="menu-category">
+          <a href="AboutUs.html" class="menu-title">About Us</a>
+        </li>
+
+        <li class="menu-category">
+          <a href="ContactUs.html" class="menu-title">Contact Us</a>
+        </li>
+
+
+      </ul>
+
+    </div>
+
+  </nav>
+
+
+  <ul id="results"></ul>
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  
+  <script src="/search.js"></script>
+</body>
+</html>
